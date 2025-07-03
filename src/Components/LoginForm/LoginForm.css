@@ -10,7 +10,8 @@
   width: 420px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  /* backdrop-filter: blur(30px); */
+  -webkit-backdrop-filter:blur(15px) ;
+  backdrop-filter: blur(15px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 20px;
@@ -106,7 +107,7 @@
 }
 
 .wrapper button:hover {
-  background: linear-gradient(to right, rgb(17, 17, 255), rgb(72, 255, 0));
+  background: linear-gradient(to right, rgb(17, 17, 255), rgb(255, 0, 25));
   color: white;
   letter-spacing: 2px;
 }
