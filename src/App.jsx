@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
-import LoginForm from './Components/Assets/LoginForm/LoginForm';
+import LoginForm from './Components/LoginForm/LoginForm';
 import HomePage from './pages/HomePage';
 import { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
@@ -14,8 +14,8 @@ function App() {
       <ToastContainer />
       <BrowserRouter className="App">
         <Routes>
-          <Route path='/' element={<LoginForm setLogin={setLogin} />} />
-          <Route path='/home' element={login ? <HomePage /> : <Navigate to={"/"} />} />
+          <Route path='/login' element={<LoginForm setLogin={setLogin} />} />
+          <Route path='/' element={login ? <HomePage /> : <Navigate to={"/login"} />} />
         </Routes>
       </BrowserRouter>
     </>

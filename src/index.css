@@ -10,11 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display:flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  background: url(./Components/Assets/background.jpg) no-repeat;
   background-position: center;
 }
 
